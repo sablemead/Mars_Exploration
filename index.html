@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Mars Exploration</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="http://fonts.cdnfonts.com/css/glacial-indifference-2"rel="stylesheet">
+	<style>
+		@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Mars</a>
+		<ul>
+			<li><a href="#" class="active">Home</a></li>
+			<li><a href="#">Tickets</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	<section>
+		<img src="Images/stars.png" id="stars">
+		<img src="Images/planet.png" id="planet">
+		<img src="Images/secondary_planet.png" id="planet-2">
+		<img src="Images/mountainsbehind.png" id="mountainsbehind">
+		<img src="Images/middleground.png" id="middleground">
+		<h2 id="text">Mars Exploration</h2>
+		<a href="index2.html" id="btn">Buy Tickets</a>
+		<img src="Images/frontmountain.png" id="frontmountain">
+	</section>
+	<div class="sec" id="sec">
+	<h2>Take A Flight To Mars</h2>
+	<h3>With a purchase of a ticket, you will get the chance to visit our next door neighbor, Mars. <br>It is just one flight away! Come join us on the TARDIS to visit the Red Planet.</h3><br><br>
+		<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	<br><br></p>
+	</div>
+	
+	<script>
+	let stars = document.getElementById('stars');
+	let planet = document.getElementById('planet');
+	let mountainsbehind = document.getElementById('mountainsbehind');
+	let middleground = document.getElementById('middleground');
+	let secondary_planet = document.getElementById('planet-2');
+	let text = document.getElementById('text');
+	let btn = document.getElementById('btn');
+	let frontmountain = document.getElementById('frontmountain');
+	let header = document.querySelector('header');
+	window.addEventListener('scroll', function(){
+		let value = window.scrollY;
+		stars.style.left = value * 0.25 + 'px';
+		planet.style.top = value * 1.05 + 'px';
+		secondary_planet.style.top = value * 0.10 + 'px';
+		mountainsbehind.style.top = value * 0.5 + 'px';
+		frontmountain.style.top = value * 0 + 'px';
+		text.style.marginRight = value * 4.5 + 'px';
+		header.style.top = value * 0.5 + 'px';
+		btn.style.marginTop = value * 0.4 + 'px';
+	})
+	</script>
+	
+	
+
+<script src="fslightbox.min.js"></script>
+</body>
+</html>

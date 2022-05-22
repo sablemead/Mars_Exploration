@@ -1,0 +1,105 @@
+<!doctype html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<title>Mars Exploration - Tickets</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<link href="http://fonts.cdnfonts.com/css/glacial-indifference-2"rel="stylesheet">
+	<style>
+		@import url('http://fonts.cdnfonts.com/css/glacial-indifference-2');
+	</style>
+</head>
+<body>
+	<header>
+		<a href="#" class="logo">Mars</a>
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#" class="active">Tickets</a></li>
+			<li><a href="#">About Us</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+	</header>
+	
+<div class="container">
+	<div class="row">
+			<div class="col-1">
+				<h2>Buy Flight<br>Tickets Now</h2>
+			</div>
+			<div class="col-2">
+			<h3>The following is the flight schedule</h3><br>
+			<div id="table">
+			<p>
+			<table>
+			<tr>
+				<th>January-April</th>
+				<th>May-August</th>
+				<th>September-December</th>
+			</tr>
+			<tr>
+				<td>1/5</td>
+				<td>5/4</td>
+				<td>9/7</td>
+			</tr>
+			<tr>
+				<td>2/2</td>
+				<td>6/1</td>
+				<td>10/5</td>
+			</tr>
+			<tr>
+				<td>3/2</td>
+				<td>7/6</td>
+				<td>11/2</td>
+			</tr>
+			<tr>
+				<td>4/6</td>
+				<td>8/3</td>
+				<td>12/7</td>
+			</tr>
+			
+			<style>
+		table { margin: auto;
+				align: center;
+				border: 5px solid #fff;
+				width: 500px; }
+		td, th { border: 1px solid #fff;
+				padding: 0.5em; }
+		
+		
+		</style>
+		
+			</table><br><br>
+			</p>
+			</div>
+				<button type="button">Purchase</button>
+			</div>
+		</div>
+		<div id="footer">
+		<div class="social-links">
+			<img src="Images/fb.png">
+			<img src="Images/ig.png">
+			<img src="Images/tw.png">
+			</div>
+		</div>
+</div>
+
+
+<script>
+	
+		var menuList = document.getElementById("menuList");
+		
+		menuList.style.maxHeight = "0px"; 
+		
+		function togglemenu(){
+		
+			if(menuList.style.maxHeight == "0px")
+				{
+					menuList.style.maxHeight = "130px";
+				}
+			else
+				{
+					menuList.style.maxHeight = "0px";
+				}
+		}
+	</script>
+</body>
+</html>
